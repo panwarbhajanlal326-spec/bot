@@ -38,7 +38,7 @@ def check_telegram_messages():
                     if "message" in result:
                         chat_id = result["message"]["chat"]["id"]
                         text = result["message"].get("text", "")
-                        print(Stimuli: f"Message aaya: {text}")
+                        print(f"Message aaya: {text}")
                         
                         # User ko reply bhejna
                         send_message(chat_id, "Ram Ram! Main Panwar Bot hu, aapne kya likha: " + text)
